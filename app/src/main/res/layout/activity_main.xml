@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,57 +10,14 @@
         android:orientation="vertical"
         android:padding="30dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text="This is an example form"
-            android:textColor="#C50000"
-            android:textSize="20sp"
-            android:layout_marginTop="30dp"
-            android:textStyle="bold" />
-
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_person"/>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:gravity="bottom"
-            android:drawableStart="@drawable/ic_person"
-            android:text="What is your name ?" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="What is your father's name?" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Your age ?" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
+            android:background="#FF0000"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/img5" />
 
         <TextView
             android:layout_width="match_parent"
@@ -69,63 +27,81 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Type here" />
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:text="Are You a student ?" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Are You 20 years+ ?" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello How are you feeling today?" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Your email address ?" />
+            android:text="What are you intereseted in ?" />
 
-        <EditText
+
+
+
+
+        <RadioGroup
             android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
+            android:checkedButton="@id/rb2"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web Developement" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Your address" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Development" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Your qualification" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graphics" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Your weight ?" />
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Office automation" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Type here"
-            android:layout_height="wrap_content" />
+
+        </RadioGroup>
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#0B9D00"
-            android:text="Submit Form"/>
+            android:text="Submit Form" />
 
     </LinearLayout>
 </ScrollView>
