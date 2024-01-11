@@ -11,15 +11,18 @@
         android:id="@+id/my_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/my_custom_button"
+
+        android:background="@drawable/my_custom_btn_bg"
+        android:foreground="?attr/selectableItemBackground"
+
+        android:textColor="#fff"
+
         android:paddingHorizontal="50dp"
         android:paddingVertical="10dp"
         android:text="Test text"
-        android:textColor="#fff"
+
         android:textSize="20sp"
-
-        android:foreground="?attr/selectableItemBackground"
-
         android:textStyle="bold" />
+
 
 </LinearLayout>
